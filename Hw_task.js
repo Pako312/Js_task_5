@@ -7,15 +7,26 @@
 // С помощью только этих двух функций вычислите следующее
 // несложное выражение: 36325 * 9824 + 777
 
-function add( a, b ) {
-    c = a + b;
-    return c;
+// function add( a, b ) {
+//     c = a + b;
+//     return c;
+// }
+
+// function multiply( a, b ) {
+//     c = a * b;
+//     return c;
+// }
+
+// result = add(multiply(36325, 9824), 777);
+// alert( result );
+
+// 2) Сделайте функцию, которая возвращает квадрат числа. Число передается параметром.
+
+function square(num, func) {
+	console.log(func(num));
 }
 
-function multiply( a, b ) {
-    c = a * b;
-    return c;
-}
-
-result = add(multiply(36325, 9824), 777);
-alert( result );
+// Выведет 25:
+square(5, function(num) {
+	return num * num;
+});
